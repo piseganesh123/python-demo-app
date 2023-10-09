@@ -9,7 +9,7 @@ client = MongoClient("mongo:27017")
 
 @app.route('/')
 def todo():
-    return "Successfully connected to Mongo DataBase !\n"
+    return "Successfully started Python Application !\n"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=os.environ.get("FLASK_SERVER_PORT", 9090), debug=False)
