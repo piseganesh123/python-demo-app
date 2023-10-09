@@ -9,10 +9,6 @@ client = MongoClient("mongo:27017")
 
 @app.route('/')
 def todo():
-    try:
-        client.admin.command('ismaster')
-    except:
-        return "Server not available"
     return "Successfully connected to Mongo DataBase !\n"
 
 if __name__ == "__main__":
